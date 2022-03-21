@@ -1,0 +1,16 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    background: #222244;
+}
+
+nav {
+    background: #FDFD96;
+}
+
+footer {
+    background: #BB9966;
+    color: #FFFFFF
+}
