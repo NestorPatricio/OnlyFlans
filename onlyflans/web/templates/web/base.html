@@ -9,8 +9,10 @@
     <!--Etiqueta necesaria para la responsividad.-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <!--Link para habilitar la hoja de estilos CSS de Bootstrap v5.1.3, minificado, por CDN.-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous">
     <!--Link para habilitar las fuentes de Google Fonts.-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +23,9 @@
         integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS"
         crossorigin="anonymous">
     <!--Link para referenciar la hoja de estilos CSS local.-->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static './web/css/style.css' %}">
     <!--Etiquetas para el title de la pestaña y el favicon.-->
-    <title>Bienvenido a onlyFlans</title>
+    <title>Bienvenido a OnlyFlans</title>
     <link rel="shortcut icon" type="#" href="#">
     <!--<meta> informativos para que tu página sea fácil de encontrar por los buscadores.-->
     <meta name="author" content="#">
@@ -35,11 +37,11 @@
 <body>
 
     {% block 'header' %}
-    {% include 'header.html' %}
+    {% include 'web/header.html' %}
     {% endblock %}
 
     {% block 'navbar' %}
-    {% include 'navbar.html' %}
+    {% include 'web/navbar.html' %}
     {% endblock %}
 
     {% block 'contenido' %}
@@ -49,12 +51,13 @@
     {% endblock %}
     
     {% block 'footer' %}
-    {% include 'footer.html' %}
+    {% include 'web/footer.html' %}
     {% endblock %}
 
     <!--Link para habilitar el script JS de JQuery v3.6.0, minificado y con Ajax y módulos effects, por CDN.-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
     <!--Link para habilitar el script JS de Bootstrap v5.1.3, minificado y con Popper, por CDN.-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

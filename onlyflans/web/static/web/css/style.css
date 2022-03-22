@@ -1,0 +1,20 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: #222244;
+}
+
+nav {
+    background-color: #FDFD96;
+}
+
+.card-img {
+    height: 12rem;
+}
+
+footer {
+    background-color: #BB9966;
+    color: #FFFFFF;
+}
