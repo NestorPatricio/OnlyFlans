@@ -3,5 +3,11 @@
 {% block 'contenido' %}
 <div class="container">
     <p>Contacto.</p>
+
+    <form action="contacto" method="post">
+    {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit">
+    </form>
 </div>
 {% endblock 'contenido' %}

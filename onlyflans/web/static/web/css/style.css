@@ -1,5 +1,5 @@
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -8,6 +8,11 @@ header {
 
 nav {
     background-color: #FDFD96;
+    font-weight: 500;
+}
+
+.cont-text {
+    font-weight: 500;
 }
 
 .card-img {
