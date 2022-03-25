@@ -12,14 +12,14 @@
     {% endif %}
     <div class="shadow p-3 informacion rounded">
         <p class="mb-1 fs-3">Nuestros flanes</p>
-        <p class="fs-6">Traemos los secretos mejor guardados de  nuestras abuelas para entregarte los mejores flanes.</p>
+        <p class="fs-6">Buscamos los secretos mejor guardados de  nuestras abuelas para entregarte los mejores flanes.</p>
         <a role="button" class="btn boton-sesion px-0 fs-5" href="{% url 'web:acerca' %}">Conócenos</a>
     </div>
     <div class="row">
         {% for flan in public_flans %}
 
         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-5 mb-2">
-            <div class="card">
+            <div class="card shadow">
                 <img src="{{ flan.image_url }}" class="img-fluid"
                     alt="Al rico flan">
                 <div class="card-body">

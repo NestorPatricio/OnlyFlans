@@ -12,7 +12,7 @@ class ContactFormForm(forms.Form):
 
 
 class ContactFormModelForm(forms.ModelForm):
-    message = forms.CharField(widget = forms.TextInput(attrs={'class': 'mensaje'}))
+    message = forms.CharField(widget = forms.Textarea(attrs={'rows': '4', 'cols': '30', 'style': 'resize: none;'}))
     
     class Meta:
         model = ContactForm

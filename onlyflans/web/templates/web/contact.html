@@ -9,7 +9,7 @@
 
         {{ form.non_field_errors }}
         <div class="mb-3 text-center">
-            <label for="{{ form.customer_name.id_for_label }}" class="form-label success fs-5">
+            <label for="{{ form.customer_name.id_for_label }}" class="form-label success fs-5 mb-0">
                 Nombre:
             </label>
             <div>
@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="mb-3 text-center">
-            <label for="{{ form.customer_email.id_for_label }}" class="form-label success fs-5">
+            <label for="{{ form.customer_email.id_for_label }}" class="form-label success fs-5 mb-0">
                 Correo electrónico:
             </label>
             <div>
@@ -31,7 +31,7 @@
             </div>
         </div>
         <div class="mb-3 text-center">
-            <label for="{{ form.message.id_for_label }}" class="form-label success fs-5">
+            <label for="{{ form.message.id_for_label }}" class="form-label success fs-5 mb-0">
                 Ingresa tu consulta:
             </label>
             <div>
@@ -41,7 +41,7 @@
                 {{ form.message.errors }}
             </div>
         </div>
-        <input type="submit" value="Enviar" class="btn btn-primary boton-sesion my-3">
+        <input type="submit" value="Enviar" class="btn boton-sesion my-3">
     </form>
 </div>
 {% endblock 'contenido' %}

@@ -50,8 +50,9 @@ nav {
 }
 
 .mensaje {
-    height: 15rem;
+    height: 100px;
     width: 60vw;
+    vertical-align: top;
 }
 
 #lorem {
