@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="{% static './web/css/style.css' %}">
     <!--Etiquetas para el title de la pestaña y el favicon.-->
     <title>Bienvenido a OnlyFlans</title>
-    <link rel="shortcut icon" type="#" href="#">
+    <link rel="shortcut icon" type="#" href="{% static './web/img/favicon-black.png' %}">
     <!--<meta> informativos para que tu página sea fácil de encontrar por los buscadores.-->
     <meta name="author" content="#">
     <meta name="description" content="#">
@@ -55,6 +55,9 @@
     {% include 'web/footer.html' %}
     {% endblock %}
 
+    <!--Link para habilitar el script JS de JQuery 3.6.0, completo y minificado-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!--Link para habilitar el script JS de Bootstrap v5.1.3, minificado y con Popper, por CDN.-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -63,6 +66,8 @@
     <script defer src="https://use.fontawesome.com/releases/v6.0.0/js/all.js"
         integrity="sha384-l+HksIGR+lyuyBo1+1zCBSRt6v4yklWu7RbG0Cv+jDLDD9WFcEIwZLHioVB4Wkau"
         crossorigin="anonymous"></script>
+    <!--Link para referenciar el script JS local-->
+    <script src="{% static './web/js/script.js' %}"></script>
 
 </body>
 

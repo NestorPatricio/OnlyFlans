@@ -3,7 +3,9 @@
 {% block 'contenido' %}
 <div class="container p-5 text-center">
     <h3>Has cerrado tu sesión correctamente.</h3>
-    <a class="fs-5 logout mx-3" href="{% url 'web:índice' %}">Vuelve al Inicio</a> |
-    <a class="fs-5 logout mx-3" href="{% url 'web:login' %}">Reinicia tu sesión</a>
+    <div class="row mt-4 text-center">
+        <a class="fs-5 logout col-12 col-md-2 ms-auto" href="{% url 'web:índice' %}">Vuelve al Inicio</a>
+        <a class="fs-5 logout col-12 col-md-2 me-auto" href="{% url 'web:login' %}">Reinicia tu sesión</a>
+    </div>
 </div>
 {% endblock 'contenido' %}

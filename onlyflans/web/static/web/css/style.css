@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
 
 header {
@@ -76,5 +77,11 @@ nav {
 
 footer {
     background-color: #BB9966;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-ico {
+    text-decoration: none;
     color: #FFFFFF;
 }
