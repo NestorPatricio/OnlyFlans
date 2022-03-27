@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
@@ -38,13 +38,17 @@ def registro(request):
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
         if form.is_valid():
+            # El método '.save()' permite guardar en la BD el registro de la variable 'form'
             form.save()
+            # Se inicia la sesión  del usuario inmediatemente después del registro.
             usuario = form.cleaned_data['username']
             contrasena = form.cleaned_data['password1']
             new_user = authenticate(username = usuario, password = contrasena)
             login(request, user = new_user)
+            # Se agrega un mensaje de éxito.
             messages.success(request, f'Usuario {usuario} registrado exitosamente.')
-            return redirect('/web/')
+            # Redirección a la página de inicio
+            return HttpResponseRedirect('/web/')
     else:
         form = UserRegisterForm()
     return render(request, './web/register.html', {'form': form})
